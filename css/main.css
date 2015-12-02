@@ -1,24 +1,74 @@
-
-body {
-	padding:10px;
-	background-image: url(../img/background1.svg);	
-	no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+.header {
+	text-align: center;
+	color: white;
 }
 
-
-#wordBank{
-	background-color: gray;
+#topArea {
+	background: rgba(54, 169, 240, 0.5);
+	width: 100%;
+	padding: 0;
+	padding-bottom: 0;
 }
 
-.label {
-	color:white;
-	font-size: 1.5em;
+#headerArea {
+	padding-bottom: 15px;
+	margin-top: 10px;
 }
 
-.font {
-	color:white;
+#textArea {
+	margin-top: 50px;
+	margin-bottom: 150px;
 }
+
+/*@media screen and (min-width: 768px) {
+	#topArea {
+		background: url("../images/seattle-sm.jpg");
+		background-repeat: no-repeat;
+		height: 250px;
+		font-size: 50px;
+	}
+
+	#textArea {
+		margin-top: 25px;
+		margin-bottom: 120px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#topArea {
+		background: url("../images/seattle-md.jpg");
+		background-repeat: no-repeat;
+		height: 300px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#topArea {
+		background: url("../images/seattle-lg.jpg");
+		background-repeat: no-repeat;
+		height: 325px;
+	}
+
+	h1 {
+		font-size: 75px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#topArea {
+		background-repeat: repeat;
+	}
+}*/
+
+
+
+
+
