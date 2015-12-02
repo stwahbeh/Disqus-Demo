@@ -1,68 +1,35 @@
-
 <!DOCTYPE html>
-<html>
-
+<html ng-app="myApp">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spotify</title>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Include libraries -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
 
-    <!-- Read scripts -->
-    <script src="js/disqus.js"></script>
-    <link href="css/main.css" type="text/css" rel="stylesheet" />
-
+  <link href = "disqus.css" rel="stylesheet" type = "text/css"/>
+  <meta charset="utf-8">
+  <title>Youta Portfolio</title>
 </head>
-
 <body>
-    <!-- Initiate app -->
-    <div ng-app="myApp" ng-controller="myCtrl">
-        <!-- Form -->
-        <form class="container" name="songForm">
-
-            <div class="form-group">
-                <label class="label">Album name</label>
-                <input name="search" placeholder="Enter your album name..." ng-model="album" class="form-control" ng-click="getAlbum(search)"></input>
-            </div>
-            <div class="form-group">
-                <button ng-disabled="songForm.search.$invalid" class="btn btn-primary" ng-click="getAlbum(search)" type="submit">Submit</button>
-            </div>
-        </form>
-
-        <!-- Results -->
-        <div class="container-fixed">
-            <div class="help-block">
-                <span ng-show="notAlbum" class="font">  Click to see an album's track</span>
-            </div>
-            <div ng-repeat="album in albums" class="col-md-4 img" title="{{album.name}}" model="album" ng-click="getTracks(album.id)" ng-show="notAlbum">
-                <image ng-click="getTracks(album.id)" title="{{album.name}}" ng-src="{{album.images[1].url}}"></image>
-                <p ng-click="getTracks(album.id)" class="font">{{album.name}}</p>
-            </div>
-           
-            <div class="col-md-12">
-                 <div class="help-block">
-            <span ng-show="notTracks" class="font" >Click to play track</span>
-            <span ng-show="notTracks" ng-click="switchView()" class="font"> |  Click to go back to albums</span>
-            <span ng-show="currentSong && !audioObject.paused" class="font">(playing)</span>
-            </div>
-            <ul>
-            <li ng-repeat="track in tracks" title="{{track.name}}" ng-show="notTracks" ng-click="play(track.preview_url)" class="font">
-                
-                {{track.name}}
-            </li>
-            </ul>
-            </div>
-            </div>
-
-        </div>
+  <div id="topArea" class="container">
+    <div id="headerArea" class="header">
+      <h1>Disqus Demo</h1>        
     </div>
-</body>
+  </div>
 
+  <div id="textArea" class="container">
+    <p>Do the following with your Disqus feature!</p>
+    <ul>
+      <li>Type in your comment</li>
+      <li>Reply to someone else's comment</li>
+      <li>Go to your admin account page, and </li>
+    </ul>
+    <!-- Copy and paste your Disqus code that you generated here -->
+
+    
+
+
+  </div>
+</body>
 </html>
-            
